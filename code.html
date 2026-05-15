@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Objectif Civique - Réussissez votre examen civique</title>
+<!-- Tailwind CSS v3 with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Font: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              blue: '#0055a4', // Classic French Blue
+              red: '#ef4444',
+              surface: '#f9f9fc',
+            }
+          },
+          borderRadius: {
+            'custom': '12px',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-gradients">
+    /* Subtle background glow effects seen in reference */
+    .hero-gradient-overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 600px;
+      background: radial-gradient(circle at 70% 30%, rgba(0, 85, 164, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+      z-index: -1;
+    }
+    .hero-red-glow {
+      position: absolute;
+      top: 100px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(239, 68, 68, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+      z-index: -2;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased overflow-x-hidden bg-[radial-gradient(circle_at_top_right,_#e0e7ff_0%,_transparent_40%),_radial-gradient(circle_at_bottom_left,_#fef2f2_0%,_transparent_40%)]"><div class="fixed inset-0 pointer-events-none opacity-[0.03] z-[-1]" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBhixPNMvRf-PBBB_uhclWcqaietQs0xC4XmUbOoKrl3UwhJqnznXgpEr47M0V-SjbLQWOKlrH8ExfbxwYtEAtFCSVCsVTzRCgeR_RLbYdQbV3H1eIijo2kLKLtd_wr7iAW63a1dnEOZub0vLo1CdqDobRN26dmP2WLsuZHem-d__Ax5MpMnn9WRnWMRChLVwiKV2JuhB7fu21L9SWKVfzxNMHI8eZTrDgyUAkM0ExanyWWwqf211xCvzNT-zQWKETV3gAR5OsRddMo'); background-size: 400px; background-repeat: repeat;"></div>
+<!-- BEGIN: Navigation -->
+<header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100" data-purpose="main-header">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<div class="flex items-center gap-3"><img alt="Objectif Civique Logo" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0JQ0UUD525rgim5U24HIBZ-5GrpRZyPGB88ZZg4VhTXlejTCxWDIjWpvf9hmr8pUrPIikTyy1248frlNTJ_Otxx9y6uWu8scNRFyjUN4FQyaeWfVvHXFqp8c9CSOqPcefd8EzX7nmXvZsJDRbt2JpBIMAgy5jQ4kQa3wWwBn3XYCk8ceMDXbbnfHSrkExqurCa6nLa1U-0_Upa1gIZNyWmFpvP6ATJQ82uTFh0CXB6N56f8oqyGqsAbxKJG_oH7Lo_rJf4qFkjy5O"/>
+<div class="flex flex-col">
+<span class="text-xl font-extrabold tracking-tight leading-none text-brand-blue">Objectif</span>
+<span class="text-xl font-extrabold tracking-tight leading-none">Civique</span>
+</div></div>
+<!-- Nav Links -->
+<nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
+<a class="hover:text-brand-blue transition-colors" href="#">Fonctionnalités</a>
+<a class="hover:text-brand-blue transition-colors" href="#">Examen</a>
+<a class="hover:text-brand-blue transition-colors" href="#">Parcours</a>
+<a class="hover:text-brand-blue transition-colors" href="#">À propos</a>
+<a class="hover:text-brand-blue transition-colors" href="#">FAQ</a>
+</nav>
+<!-- CTA -->
+<div>
+<a class="bg-brand-blue text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-blue-800 transition-all shadow-lg shadow-blue-500/20" href="#">
+          Télécharger l'app
+        </a>
+</div>
+</div>
+</header>
+<!-- END: Navigation -->
+<main class="pt-20">
+<!-- BEGIN: Hero Section -->
+<section class="relative pt-16 pb-24 overflow-hidden" data-purpose="hero-section">
+<div class="hero-gradient-overlay"></div>
+<div class="hero-red-glow"></div>
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center text-center lg:text-left">
+<!-- Text Content -->
+<div class="z-10">
+<div class="inline-flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-full px-4 py-1.5 mb-8">
+<span class="text-lg">🏆</span>
+<span class="text-sm font-medium text-gray-600">L'application n°1 pour réussir votre examen civique</span>
+</div>
+<h1 class="text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-6">Réussissez votre <br/>
+<span class="text-brand-blue italic">examen civique</span> et <br/>
+votre <span class="relative inline-block">intégration<span class="absolute bottom-1 left-0 w-full h-1.5 bg-brand-red/30 -z-10 rounded-full"></span></span>.</h1>
+<p class="text-xl text-gray-500 mb-10 max-w-lg leading-relaxed">
+            Préparez votre avenir en France avec Objectif Civique. Des milliers de questions officielles, des simulations intelligentes et un suivi personnalisé.
+          </p>
+<div class="flex flex-wrap gap-4 mb-10">
+<a href="#"><img alt="App Store" class="h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJXb5ThyZYgjvfexVzFuvgQqS5Fy3DMBreVu_q25zOkOSLXzR9cBkMDxW8IU_5xoTOYIotMYbRg3QqnhNHB9GqOOnQBtHgbxvTB1zG0bdjlfry4u4MGzAO0NVY-NZNOwRtDJ-TjSWisMh7d3oIMEbWVETb0BbMsUxUpKSBZrOQjWNqGglWBgUFx65TVHzyq6NEYTH8XO6XA2B6LDyObNpMLa3IHdqo49fZuJW1rt-ke7cWvuWi2guWX1DeVZRvmSoIlpV4wjMV8OHp"/></a>
+<a href="#"><img alt="Google Play" class="h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJM-S3g-R-s2lN6pLaOTNWn8KPDWN0eHtLc92cJpup27SfFGFYh7XcGpg1wRN6TquDwsfxss2SWskbGx-JARgEZk3gefnCv-7gGF2p-Qshjq46LZwSOccN89YxYVXFs00sVLE86rAAHyYIhdjWOwr4OK2vrrSxqaDHbt86a2CSdAPMVqnkStZ3MbKOYmdJwBo5TbMiUo-uhVlkAA23pvyrziDaRKuFRXbvk-XIKuFdZeQ6gn8qYSWkZkIW5vFzqyCS4TsWDy-toOmo"/></a>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex -space-x-3">
+<img alt="User" class="w-10 h-10 rounded-full border-2 border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmCL_muw1FEl44b8ILkHCm-NJ-skFKmzGW8CKhsKdKSZ3yyqT3q2EIe9_FuS_y8dtutKoXPvF3-03IvCa60DbkAwhG_42R5_00QYHk6XJrODh7s0Ij3GszJoXog2b0TR1eD6Fith2NINZO7hPizSXhQ1nU775_hqQSF1FcUGVBntjsLjJkcp89ozXI24Jeoxl4ZsEUI36zr2K_LKZXboMYhax_dhg-22m-JuZe3CzHJ3Je4G-VFaCEAW35jhElEuc9gG8tUDSQJN9R"/>
+<img alt="User" class="w-10 h-10 rounded-full border-2 border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMZoL2aQG8vOMnTBAD0rK53kxH3K4C6OHFKMbDRPeNh1kjvJwWGo4WyRr_5QRzMGfSUf7KHtImWmcLhKNSVREkshyU6AJG0nRT2sdqIciuD1p_Pyk7EK64Q3BHAS9d9X9BPOa9_MObN6wYVX3UlVf3RpFco4FzhEe5Kxmv0BIbZBjAILJkolyK17-vGjhPHiFhgH1f5Xej_2dfH1E3MTBe4U_qqgcaqQwJK6Ap57py9OzQ86EJiCgPL5Cw6PZlCerpqkDW4sJlqLPQ"/>
+<img alt="User" class="w-10 h-10 rounded-full border-2 border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA30kZ68lalGbWGb33TcI0DsV_ftCKPzBW_eq1DNBErchIb7Xxde_XbWWvp3scvNV5BAqRxLPE48cvO9k0adoGFz7xCqAy05Ws_8TskPylQ0SYKeX2yho2CPztPNScgGhj-itkFWHXkV_tNSl5shIzXRj_Lc8hfqDpONgRbVKjBQlGzBaFjy0SiKjmEqESFFmmC6OFQES-s7S5R3_0xI7U7cXWTBE4O3TjYro6Aoz5Xdeu8yXGTICOQl88qaQz9khEH1pIbQyBVehh2"/>
+</div>
+<div>
+<p class="text-sm font-bold">+50 000 candidats nous font confiance</p>
+<div class="flex items-center gap-1">
+<span class="text-sm font-bold text-gray-800">4,8/5</span>
+<div class="flex text-yellow-400">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4 fill-current" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4 fill-current" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4 fill-current" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4 fill-current" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Phone Mockups -->
+<div class="relative flex items-center justify-center h-[600px] lg:justify-center" data-purpose="phone-composition">
+<!-- Back Phone -->
+<div class="absolute w-[240px] h-[480px] -translate-x-32 rotate-[-12deg] z-0 rounded-[40px] border-[8px] border-slate-900 overflow-hidden shadow-2xl opacity-60">
+<img alt="App interface 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5rSz4RQM4ZzxiYkKqy-aUn1XsG8URrqoLTohdVhesbdFRy0E_tE6gH-WVO7hTDq8k_8uaYMWF9AUGX1Iau-7acu59hSI-Sljl_NCZTh9mg9g3nmfPdtZIIDFEi1B1p81TYJLz02QHz9b0Mp4_Hdt-RWGCxgIRa6USPbIl0Mq8pk-ojynayq3iI6PqYZ2-kVRLJvTbO-Ax_zwhJ0XyigRd-4OLb-5Ytru87x5UL1YCE2yTTn5YQf6Cvrlods0UnyOAnWM8gmCbLLfx"/>
+</div>
+<!-- Middle Phone -->
+<div class="absolute w-[260px] h-[520px] -translate-x-10 rotate-[-4deg] z-10 rounded-[40px] border-[10px] border-slate-900 overflow-hidden shadow-2xl">
+<img alt="App interface 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUxJ6bejQY2MHDb33-h2bgq-CKcLqnDmxTIgQI_F39neeBEO1Q8pQ5DszKrKXE9YLzCMz14nVL5BB3PweNclxvjIT23LDU4Py3C_nnAQG_avjxlHP4-FgDpHwvTe0aLVwLWVlQcdj-kmqMM-uDJ6BKuPmQTin7O8Ovlmp9wD-ly9_LPzTcNt3WH4wpBdVizUyhWa2bV72iaFLHN2r20aWEVDGsfEB8TNpDZ2DLV_YKIui2oww8JwlG_TNRb1sRyFjo0BENkjbJp7uK"/>
+</div>
+<!-- Front Phone -->
+<div class="relative w-[280px] h-[560px] translate-x-20 rotate-[6deg] z-20 rounded-[40px] border-[12px] border-slate-900 overflow-hidden shadow-2xl">
+<img alt="App interface 3" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqQSnCYJWDyCY6kSotOEddagwVhBegMf2AqrT-vhnjWlhQR4G9jRsmdfj6q0u0ZHJ6wPZcrSTiaUHlYIRdbUaGg6sTA_R0Kd51h1T1ZbdiOPaTzoNwuAPIZAJOBqB5RF7iQ5JItIsejX-Hu_xGEuGm_eDSr4x0MY1_UaaAhYCoOAF1ovEvaBUXd-x-5hLUOv45lqoRzMfbYQVR5bu1vWaDe4i17jWKr8pYhpF6zABn-IY8DFHR7lK5VqmV3hXUvBG3wSNmm-LLhW3E"/>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Features Bar -->
+<section class="py-12 px-6" data-purpose="features-grid">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 bg-white border border-gray-100 shadow-xl shadow-blue-900/5 rounded-3xl p-6">
+<!-- Feature 1 -->
+<div class="flex flex-col items-center lg:items-start text-center lg:text-left p-4">
+<div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4 text-brand-blue"><div class="w-full h-full bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6gMQ4hsX__r6sF0d-AyuUVnwa9m6LVS4us5frX5Q-XipWx3xMMxhZ7uWfBGYd4ahyBCGb9tjPM12XPLNfhcfAodayL89YirYiiDu7k3cFi3LONU5Z-PPtdGXMKpnqjf3PoIDKAtVkS_vUCKHRbF35o-yDvdHzCFWIhbjy1YjQWW5YaEsj9fXOOuMeA5ygBlnhSfifFikaW_1pkXLXsPI4aJb3TFN9u4jmnEVn4uan3ABs_m_rRtxlvuXbYojl13HGF_cnJpyWSADp')] bg-[size:300%_200%] bg-[position:0%_0%] scale-110"></div></div>
+<h3 class="font-bold mb-1">Contenu officiel</h3>
+<p class="text-xs text-gray-500">2500+ questions issues des sources officielles.</p>
+</div>
+<!-- Feature 2 -->
+<div class="flex flex-col items-center lg:items-start text-center lg:text-left p-4">
+<div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4 text-brand-blue"><div class="w-full h-full bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6gMQ4hsX__r6sF0d-AyuUVnwa9m6LVS4us5frX5Q-XipWx3xMMxhZ7uWfBGYd4ahyBCGb9tjPM12XPLNfhcfAodayL89YirYiiDu7k3cFi3LONU5Z-PPtdGXMKpnqjf3PoIDKAtVkS_vUCKHRbF35o-yDvdHzCFWIhbjy1YjQWW5YaEsj9fXOOuMeA5ygBlnhSfifFikaW_1pkXLXsPI4aJb3TFN9u4jmnEVn4uan3ABs_m_rRtxlvuXbYojl13HGF_cnJpyWSADp')] bg-[size:300%_200%] bg-[position:50%_0%] scale-110"></div></div>
+<h3 class="font-bold mb-1">Simulations réelles</h3>
+<p class="text-xs text-gray-500">Entraînez-vous avec des examens chronométrés.</p>
+</div>
+<!-- Feature 3 -->
+<div class="flex flex-col items-center lg:items-start text-center lg:text-left p-4">
+<div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4 text-brand-blue"><div class="w-full h-full bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6gMQ4hsX__r6sF0d-AyuUVnwa9m6LVS4us5frX5Q-XipWx3xMMxhZ7uWfBGYd4ahyBCGb9tjPM12XPLNfhcfAodayL89YirYiiDu7k3cFi3LONU5Z-PPtdGXMKpnqjf3PoIDKAtVkS_vUCKHRbF35o-yDvdHzCFWIhbjy1YjQWW5YaEsj9fXOOuMeA5ygBlnhSfifFikaW_1pkXLXsPI4aJb3TFN9u4jmnEVn4uan3ABs_m_rRtxlvuXbYojl13HGF_cnJpyWSADp')] bg-[size:300%_200%] bg-[position:100%_0%] scale-110"></div></div>
+<h3 class="font-bold mb-1">Suivi personnalisé</h3>
+<p class="text-xs text-gray-500">Analyse de vos progrès et recommandations.</p>
+</div>
+<!-- Feature 4 -->
+<div class="flex flex-col items-center lg:items-start text-center lg:text-left p-4">
+<div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4 text-brand-blue"><div class="w-full h-full bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6gMQ4hsX__r6sF0d-AyuUVnwa9m6LVS4us5frX5Q-XipWx3xMMxhZ7uWfBGYd4ahyBCGb9tjPM12XPLNfhcfAodayL89YirYiiDu7k3cFi3LONU5Z-PPtdGXMKpnqjf3PoIDKAtVkS_vUCKHRbF35o-yDvdHzCFWIhbjy1YjQWW5YaEsj9fXOOuMeA5ygBlnhSfifFikaW_1pkXLXsPI4aJb3TFN9u4jmnEVn4uan3ABs_m_rRtxlvuXbYojl13HGF_cnJpyWSADp')] bg-[size:300%_200%] bg-[position:50%_100%] scale-110"></div></div>
+<h3 class="font-bold mb-1">Révisions thématiques</h3>
+<p class="text-xs text-gray-500">Apprenez par thèmes selon votre objectif.</p>
+</div>
+<!-- Feature 5 -->
+<div class="flex flex-col items-center lg:items-start text-center lg:text-left p-4">
+<div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4 text-brand-blue"><div class="w-full h-full bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6gMQ4hsX__r6sF0d-AyuUVnwa9m6LVS4us5frX5Q-XipWx3xMMxhZ7uWfBGYd4ahyBCGb9tjPM12XPLNfhcfAodayL89YirYiiDu7k3cFi3LONU5Z-PPtdGXMKpnqjf3PoIDKAtVkS_vUCKHRbF35o-yDvdHzCFWIhbjy1YjQWW5YaEsj9fXOOuMeA5ygBlnhSfifFikaW_1pkXLXsPI4aJb3TFN9u4jmnEVn4uan3ABs_m_rRtxlvuXbYojl13HGF_cnJpyWSADp')] bg-[size:300%_200%] bg-[position:100%_100%] scale-110"></div></div>
+<h3 class="font-bold mb-1">Rappels intelligents</h3>
+<p class="text-xs text-gray-500">Révisez chaque jour avec des rappels adaptés.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Features Bar -->
+<!-- BEGIN: Journey Section -->
+<section class="py-24 px-6 bg-brand-surface" data-purpose="journey-steps">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-extrabold mb-4">Votre parcours vers <span class="text-brand-blue">la réussite</span></h2>
+<p class="text-gray-500">Un accompagnement complet, étape par étape.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+<!-- Step 1 -->
+<div class="group">
+<div class="relative mb-6">
+<span class="absolute -top-10 -left-2 text-8xl font-black text-gray-100/50 select-none">01</span>
+<div class="relative z-10 w-full aspect-[9/19] rounded-[32px] border-4 border-slate-900 overflow-hidden shadow-lg transform transition-transform group-hover:-translate-y-2">
+<img alt="Step 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUxJ6bejQY2MHDb33-h2bgq-CKcLqnDmxTIgQI_F39neeBEO1Q8pQ5DszKrKXE9YLzCMz14nVL5BB3PweNclxvjIT23LDU4Py3C_nnAQG_avjxlHP4-FgDpHwvTe0aLVwLWVlQcdj-kmqMM-uDJ6BKuPmQTin7O8Ovlmp9wD-ly9_LPzTcNt3WH4wpBdVizUyhWa2bV72iaFLHN2r20aWEVDGsfEB8TNpDZ2DLV_YKIui2oww8JwlG_TNRb1sRyFjo0BENkjbJp7uK"/>
+</div>
+</div>
+<h4 class="font-bold text-lg mb-2">Choisissez votre objectif</h4>
+<p class="text-sm text-gray-500">Naturalisation, carte de séjour pluriannuelle ou carte de résident.</p>
+</div>
+<!-- Step 2 -->
+<div class="group">
+<div class="relative mb-6">
+<span class="absolute -top-10 -left-2 text-8xl font-black text-gray-100/50 select-none">02</span>
+<div class="relative z-10 w-full aspect-[9/19] rounded-[32px] border-4 border-slate-900 overflow-hidden shadow-lg transform transition-transform group-hover:-translate-y-2">
+<img alt="Step 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqQSnCYJWDyCY6kSotOEddagwVhBegMf2AqrT-vhnjWlhQR4G9jRsmdfj6q0u0ZHJ6wPZcrSTiaUHlYIRdbUaGg6sTA_R0Kd51h1T1ZbdiOPaTzoNwuAPIZAJOBqB5RF7iQ5JItIsejX-Hu_xGEuGm_eDSr4x0MY1_UaaAhYCoOAF1ovEvaBUXd-x-5hLUOv45lqoRzMfbYQVR5bu1vWaDe4i17jWKr8pYhpF6zABn-IY8DFHR7lK5VqmV3hXUvBG3wSNmm-LLhW3E"/>
+</div>
+</div>
+<h4 class="font-bold text-lg mb-2">Répondez et apprenez</h4>
+<p class="text-sm text-gray-500">Des questions officielles expliquées pour bien comprendre.</p>
+</div>
+<!-- Step 3 -->
+<div class="group">
+<div class="relative mb-6">
+<span class="absolute -top-10 -left-2 text-8xl font-black text-gray-100/50 select-none">03</span>
+<div class="relative z-10 w-full aspect-[9/19] rounded-[32px] border-4 border-slate-900 overflow-hidden shadow-lg transform transition-transform group-hover:-translate-y-2">
+<img alt="Step 3" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5rSz4RQM4ZzxiYkKqy-aUn1XsG8URrqoLTohdVhesbdFRy0E_tE6gH-WVO7hTDq8k_8uaYMWF9AUGX1Iau-7acu59hSI-Sljl_NCZTh9mg9g3nmfPdtZIIDFEi1B1p81TYJLz02QHz9b0Mp4_Hdt-RWGCxgIRa6USPbIl0Mq8pk-ojynayq3iI6PqYZ2-kVRLJvTbO-Ax_zwhJ0XyigRd-4OLb-5Ytru87x5UL1YCE2yTTn5YQf6Cvrlods0UnyOAnWM8gmCbLLfx"/>
+</div>
+</div>
+<h4 class="font-bold text-lg mb-2">Suivez votre progression</h4>
+<p class="text-sm text-gray-500">Visualisez vos résultats et identifiez vos axes d'amélioration.</p>
+</div>
+<!-- Step 4 -->
+<div class="group">
+<div class="relative mb-6">
+<span class="absolute -top-10 -left-2 text-8xl font-black text-gray-100/50 select-none">04</span>
+<div class="relative z-10 w-full aspect-[9/19] rounded-[32px] border-4 border-slate-900 overflow-hidden shadow-lg transform transition-transform group-hover:-translate-y-2">
+<img alt="Step 4" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhixPNMvRf-PBBB_uhclWcqaietQs0xC4XmUbOoKrl3UwhJqnznXgpEr47M0V-SjbLQWOKlrH8ExfbxwYtEAtFCSVCsVTzRCgeR_RLbYdQbV3H1eIijo2kLKLtd_wr7iAW63a1dnEOZub0vLo1CdqDobRN26dmP2WLsuZHem-d__Ax5MpMnn9WRnWMRChLVwiKV2JuhB7fu21L9SWKVfzxNMHI8eZTrDgyUAkM0ExanyWWwqf211xCvzNT-zQWKETV3gAR5OsRddMo"/>
+</div>
+</div>
+<h4 class="font-bold text-lg mb-2">Simulez l'examen réel</h4>
+<p class="text-sm text-gray-500">En conditions réelles pour être prêt le jour J.</p>
+</div>
+<!-- Step 5 -->
+<div class="group">
+<div class="relative mb-6">
+<span class="absolute -top-10 -left-2 text-8xl font-black text-gray-100/50 select-none">05</span>
+<div class="relative z-10 w-full aspect-[9/19] rounded-[32px] border-4 border-slate-900 overflow-hidden shadow-lg transform transition-transform group-hover:-translate-y-2">
+<img alt="Step 5" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9pN8s5bJ6D-O835EeAr8tu2MCFl9_tXC973aO1m6Y5To6jo1veJWgHjip136bJ8HZpOA3K_o_2sTKNEDwgNe9wVk1MKYLCzQu0n-N1u0GnzniBWMnwozWds_8YF7573S_FxghO5xjOFq8hxI8Gmi9lBdIEt7kvE4tN-68r1pClOQ7462UIac_aST2ResoJvdDOqIiXWMCXyUm1t4ognO5Wf6G9yWVndTY6T9A1H537p8PKQMz82LKGAecsMDO0zhyybASDX49aLA_"/>
+</div>
+</div>
+<h4 class="font-bold text-lg mb-2">Réussissez avec confiance</h4>
+<p class="text-sm text-gray-500">Soyez prêt pour votre examen et votre avenir en France.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Journey Section -->
+<!-- BEGIN: Stats Section -->
+<section class="py-12 px-6" data-purpose="statistics">
+<div class="max-w-7xl mx-auto">
+<div class="bg-brand-blue rounded-[32px] p-12 text-white flex flex-wrap justify-around items-center gap-12 relative overflow-hidden">
+<!-- Background decoration -->
+<div class="absolute right-0 bottom-0 opacity-20 pointer-events-none translate-x-1/4 translate-y-1/4">
+<img alt="Marianne Bust" class="w-96 grayscale invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs-29-avmN-V0jmS0W1KTJmX0vM63zf-ns94Nk8cySIVJdQqaEcqPYyXN7VBaS-l4quiwDvU3y6FPwbh-Bhcz0TXoQt2RVY-XmsW831fj_VViq5Bm3Gd_ZWQJPTchschPzXgNnBNVwF5a1QmpGPGSx2Im79Nt9cW0mSQbaaCsJR6oORyspxlSe-YoV-H5ouOO9JEy7-eM9bpjiAgvtj2k7bSwsWOdmuWpyXQ2k5guYkPh6qwy029pSFvbat0fS_YxawNZ3h2ogkjyz"/>
+</div>
+<!-- Stat 1 -->
+<div class="flex items-center gap-4 z-10">
+<div class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center text-white">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<div class="text-3xl font-extrabold">50 000+</div>
+<div class="text-sm opacity-80 font-medium">Utilisateurs actifs</div>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="flex items-center gap-4 z-10">
+<div class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center text-white">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<div class="text-3xl font-extrabold">2 500+</div>
+<div class="text-sm opacity-80 font-medium">Questions officielles</div>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="flex items-center gap-4 z-10">
+<div class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center text-white">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<div class="text-3xl font-extrabold">95%</div>
+<div class="text-sm opacity-80 font-medium">Taux de satisfaction</div>
+</div>
+</div>
+<!-- Stat 4 -->
+<div class="flex items-center gap-4 z-10">
+<div class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center text-white">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.921-.755 1.688-1.54 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.784.57-1.838-.197-1.539-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<div class="text-3xl font-extrabold">4,8/5</div>
+<div class="text-sm opacity-80 font-medium">Note moyenne</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Stats Section -->
+<!-- BEGIN: Final CTA Section -->
+<section class="py-24 px-6" data-purpose="final-cta">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-md">
+<h2 class="text-4xl font-extrabold mb-6">Prêt à réussir ?</h2>
+<p class="text-xl text-gray-500 mb-8">
+            Rejoignez des milliers de candidats et préparez votre avenir dès aujourd'hui.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-8 bg-gray-50 p-10 rounded-[32px] border border-gray-100">
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100">
+<!-- Simulated QR Code -->
+<div class="w-32 h-32 bg-slate-900 flex items-center justify-center p-2 rounded-lg">
+<svg class="w-full h-full text-white fill-current" viewbox="0 0 100 100">
+<path d="M10 10h30v30h-30zM15 15v20h20v-20zM22 22h6v6h-6zM60 10h30v30h-30zM65 15v20h20v-20zM72 22h6v6h-6zM10 60h30v30h-30zM15 65v20h20v-20zM22 72h6v6h-6zM50 50h10v10h-10zM60 60h10v10h-10zM70 70h10v10h-10zM80 80h10v10h-10zM50 80h10v10h-10zM70 50h10v10h-10zM80 60h10v10h-10z"></path>
+</svg>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-lg font-bold">Téléchargez l'application</h5>
+<p class="text-sm text-gray-500 mb-2">Disponible gratuitement sur iOS et Android.</p>
+<div class="flex gap-3">
+<a href="#"><img alt="App Store" class="h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjBEGoGKVKnE8gUkTLBUjGEElNpYVTLPi-cLRoKC4c9nTcQouJyHJe_6xJaMzsW7YkoJyRY8P5ps2qC1wD2gDbYVOnPgp9WkJxf9FRVDhrid0_tYq0Zsl9gI2j7NPxIdmnudFzdYUqY8fZ-XcVSJBE0rnBQYtp67JgPlPZzWphGQ_QK9ka93W5V_WkXSCGIaQwJ8t6VEkzYF7qgVHVrNSP5wsXDuU1hs9DpwpfdaV1d_bkcG8S4IIly9MGAbcEBK-AJkWilmo874BC"/></a>
+<a href="#"><img alt="Google Play" class="h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHwm_4RUtMpR21WZiEYE8Rq3UbzwmH4vJqlbYoaw6I_Ud54BW6ad2eFRj8searhfNYpeDVhNfLhvSahOxBSKBbVaCO-QNS8ERRMpbt7IcZ9d9oHfgUXHhe2ET0P-jmSE1FHWgi7pR5j1xU6vMKCFwh9ZzsdiG-gsKgzf7x8PTkFhtXvN0vAc6SBJzXqzSoQvhN2MD9syS4mM33VuSCIxLHHLNjoBAULROxp5f8DLfTZzuT8Lwk22bnISklCxZu5WCAMuLNQpYFFity"/></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Final CTA Section -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="py-12 px-6 border-t border-gray-100" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-2 opacity-60">
+<div class="w-6 h-6 bg-brand-blue rounded flex items-center justify-center text-white text-[10px] font-black">O</div>
+<span class="text-sm font-bold">Objectif Civique</span>
+<span class="text-sm text-gray-400 ml-4">© 2026 Tous droits réservés.</span>
+</div>
+<div class="flex gap-8 text-sm font-medium text-gray-500">
+<a class="hover:text-brand-blue" href="#">Mentions légales</a>
+<a class="hover:text-brand-blue" href="#">Confidentialité</a>
+<a class="hover:text-brand-blue" href="#">Contact</a>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+</body></html>
