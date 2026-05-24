@@ -46,9 +46,9 @@ function Social({ children, label }: { children: React.ReactNode; label: string 
 export default function Footer() {
   return (
     <footer className="border-t border-gray-100 bg-white/40 backdrop-blur-sm">
-      <div className="max-w-6xl mx-auto px-6 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10">
-          <div className="lg:col-span-2">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 mb-10">
+          <div className="col-span-2 lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <Image
                 src="/logo.png"
@@ -66,7 +66,7 @@ export default function Footer() {
                 </span>
               </div>
             </div>
-            <p className="text-sm text-gray-500 leading-relaxed max-w-xs mb-5">
+            <p className="text-base font-semibold text-gray-800 leading-relaxed max-w-xs mb-5">
               L&apos;application n°1 pour réussir votre examen civique et
               préparer votre avenir en France.
             </p>
@@ -75,13 +75,13 @@ export default function Footer() {
 
           {LINK_GROUPS.map((group) => (
             <div key={group.title}>
-              <h4 className="text-sm font-bold mb-4">{group.title}</h4>
+              <h4 className="text-base font-extrabold mb-4 text-gray-900">{group.title}</h4>
               <ul className="flex flex-col gap-2.5">
                 {group.links.map((l) => (
                   <li key={l.label}>
                     <a
                       href={l.href}
-                      className="text-sm text-gray-500 hover:text-brand-blue transition-colors"
+                      className="text-base font-semibold text-gray-800 hover:text-brand-blue transition-colors"
                     >
                       {l.label}
                     </a>
@@ -93,7 +93,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-100 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-gray-400">
+          <p className="text-sm font-semibold text-gray-700">
             © 2026 Objectif Civique. Tous droits réservés.
           </p>
           <div className="flex items-center gap-2">

@@ -23,16 +23,16 @@ const QUESTIONS = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-20 px-6 bg-brand-surface">
+    <section id="faq" className="py-16 sm:py-20 px-4 sm:px-6 bg-brand-surface">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
-          <span className="inline-block bg-blue-50 text-brand-blue text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full mb-3">
+          <span className="inline-block bg-blue-50 text-brand-blue text-sm font-extrabold uppercase tracking-wide px-3 py-1.5 rounded-full mb-3">
             FAQ
           </span>
-          <h2 className="text-3xl font-extrabold mb-3">
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-3 text-gray-900">
             Questions <span className="text-brand-blue">fréquentes</span>
           </h2>
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-900 text-lg font-bold">
             Tout ce que vous devez savoir avant de commencer.
           </p>
         </div>
@@ -43,13 +43,13 @@ export default function FAQ() {
               key={i}
               className="group bg-white border border-gray-100 rounded-2xl px-5 py-4 shadow-sm shadow-blue-900/5 open:shadow-md transition"
             >
-              <summary className="flex items-center justify-between cursor-pointer list-none">
-                <span className="text-sm font-bold pr-4">{item.q}</span>
-                <span className="w-7 h-7 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center text-lg font-bold transition-transform group-open:rotate-45 shrink-0">
+              <summary className="flex items-center justify-between cursor-pointer list-none gap-3">
+                <span className="text-base sm:text-lg font-extrabold text-gray-900 pr-4">{item.q}</span>
+                <span className="w-8 h-8 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center text-xl font-bold transition-transform group-open:rotate-45 shrink-0">
                   +
                 </span>
               </summary>
-              <p className="mt-3 text-sm text-gray-600 leading-relaxed">
+              <p className="mt-3 text-base font-semibold text-gray-800 leading-relaxed">
                 {item.a}
               </p>
             </details>

@@ -36,13 +36,13 @@ const FEATURES: Feature[] = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-12 px-6">
+    <section id="features" className="py-12 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 bg-white border border-gray-100 shadow-xl shadow-blue-900/5 rounded-3xl p-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 bg-white border border-gray-100 shadow-xl shadow-blue-900/5 rounded-3xl p-6">
           {FEATURES.map((f) => (
             <div
               key={f.title}
-              className="group flex flex-col items-center lg:items-start text-center lg:text-left p-3 rounded-2xl transition-all duration-300 hover:-translate-y-1"
+              className="group flex flex-col items-center text-center p-3 rounded-2xl transition-all duration-300 hover:-translate-y-1"
             >
               <div className="w-24 h-24 rounded-2xl bg-linear-to-br from-blue-50 to-red-50 flex items-center justify-center mb-4 p-3 transition-transform duration-300 group-hover:scale-105 group-hover:rotate-3">
                 <Image
@@ -53,8 +53,8 @@ export default function Features() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="font-bold mb-1 text-base">{f.title}</h3>
-              <p className="text-xs text-gray-500 leading-relaxed">{f.desc}</p>
+              <h3 className="font-extrabold mb-2 text-lg text-gray-900">{f.title}</h3>
+              <p className="text-base font-semibold text-gray-800 leading-relaxed">{f.desc}</p>
             </div>
           ))}
         </div>

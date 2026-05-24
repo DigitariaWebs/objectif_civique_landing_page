@@ -64,9 +64,9 @@ const STATS: Stat[] = [
 
 export default function Stats() {
   return (
-    <section className="py-10 px-6">
+    <section className="py-10 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="bg-brand-blue rounded-[28px] p-10 text-white flex flex-wrap justify-around items-center gap-10 relative overflow-hidden">
+        <div className="bg-brand-blue rounded-[28px] p-6 sm:p-10 text-white grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 relative overflow-hidden">
           <div className="absolute right-0 bottom-0 opacity-20 pointer-events-none translate-x-1/4 translate-y-1/4">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -76,13 +76,13 @@ export default function Stats() {
             />
           </div>
           {STATS.map((s) => (
-            <div key={s.label} className="flex items-center gap-4 z-10">
-              <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+            <div key={s.label} className="flex items-center gap-3 sm:gap-4 z-10">
+              <div className="w-12 h-12 shrink-0 rounded-full bg-white/10 flex items-center justify-center">
                 {s.icon}
               </div>
               <div>
-                <div className="text-2xl font-extrabold">{s.value}</div>
-                <div className="text-xs opacity-80 font-medium">{s.label}</div>
+                <div className="text-2xl sm:text-3xl font-extrabold">{s.value}</div>
+                <div className="text-sm font-bold opacity-95">{s.label}</div>
               </div>
             </div>
           ))}

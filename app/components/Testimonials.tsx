@@ -42,22 +42,22 @@ function Star() {
 
 export default function Testimonials() {
   return (
-    <section className="py-20 px-6 relative overflow-hidden">
+    <section className="py-16 sm:py-20 px-4 sm:px-6 relative overflow-hidden">
       <div className="absolute inset-0 bg-pattern-grid opacity-50 pointer-events-none -z-10" />
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
-          <span className="inline-block bg-blue-50 text-brand-blue text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full mb-3">
+          <span className="inline-block bg-blue-50 text-brand-blue text-sm font-extrabold uppercase tracking-wide px-3 py-1.5 rounded-full mb-3">
             Témoignages
           </span>
-          <h2 className="text-3xl font-extrabold mb-3">
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-3 text-gray-900">
             Ils ont réussi avec <span className="text-brand-blue">Objectif Civique</span>
           </h2>
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-900 text-lg font-bold">
             Des milliers de candidats nous ont fait confiance pour leur examen.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {TESTIMONIALS.map((t) => (
             <article
               key={t.name}
@@ -68,19 +68,19 @@ export default function Testimonials() {
                   <Star key={i} />
                 ))}
               </div>
-              <p className="text-sm text-gray-700 leading-relaxed">
+              <p className="text-base font-semibold text-gray-900 leading-relaxed">
                 &laquo;&nbsp;{t.quote}&nbsp;&raquo;
               </p>
-              <div className="flex items-center gap-3 mt-auto pt-2 border-t border-gray-100">
+              <div className="flex items-center gap-3 mt-auto pt-3 border-t border-gray-100">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={t.avatar}
                   alt={t.name}
-                  className="w-10 h-10 rounded-full object-cover border-2 border-white shadow"
+                  className="w-11 h-11 rounded-full object-cover border-2 border-white shadow"
                 />
                 <div>
-                  <p className="text-sm font-bold leading-tight">{t.name}</p>
-                  <p className="text-xs text-gray-500">{t.role}</p>
+                  <p className="text-base font-extrabold text-gray-900 leading-tight">{t.name}</p>
+                  <p className="text-sm font-semibold text-gray-700">{t.role}</p>
                 </div>
               </div>
             </article>

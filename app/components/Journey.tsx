@@ -39,17 +39,17 @@ const STEPS = [
 
 export default function Journey() {
   return (
-    <section id="journey" className="py-20 px-6 bg-brand-surface">
+    <section id="journey" className="py-16 sm:py-20 px-4 sm:px-6 bg-brand-surface">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
-          <h2 className="text-3xl font-extrabold mb-3">
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-3 text-gray-900">
             Votre parcours vers <span className="text-brand-blue">la réussite</span>
           </h2>
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-900 text-lg font-bold">
             Un accompagnement complet, étape par étape.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {STEPS.map((step, idx) => (
             <div key={step.n} className="group">
               <div className="relative mb-5">
@@ -68,8 +68,8 @@ export default function Journey() {
                   />
                 </div>
               </div>
-              <h4 className="font-bold text-base mb-1">{step.title}</h4>
-              <p className="text-xs text-gray-500">{step.desc}</p>
+              <h4 className="font-extrabold text-lg mb-2 text-gray-900">{step.title}</h4>
+              <p className="text-base font-semibold text-gray-800">{step.desc}</p>
             </div>
           ))}
         </div>
